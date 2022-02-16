@@ -6,7 +6,6 @@ baseurl = "https://api.jikan.moe/v4/seasons"
 
 for year in range(2019, 2022):
     for season in ["winter", "spring", "summer", "fall"]:
-        print(str(year) + " | " + season)
         url = baseurl + "/" + str(year) + "/" + season 
         r = requests.get(url).text
         res = json.loads(r)
