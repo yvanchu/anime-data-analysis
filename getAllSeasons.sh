@@ -4,6 +4,7 @@ for year in {2001..2021}
 do 
     for season in "${seasons[@]}"
     do
-        python3 getAnimeBySeason.py "$year" "$season" > "data/${year}${season}.csv"
+        python3 getAnimeBySeason.py "$year" "$season"
+        # python3 getAnimeBySeason.py "$year" "$season" > "data/${year}${season}.csv"
     done
 done
